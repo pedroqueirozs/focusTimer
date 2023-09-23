@@ -16,7 +16,7 @@ Projeto  Focus Timer desenvolvido no modulo V do curso Explorer <br/>
 <br>
 
 <p align="center">
-  <img alt="projeto DevLinks" src="./assets/capa.svg" width="100%">
+  <img alt="projeto DevLinks" src="./assets/capa.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
