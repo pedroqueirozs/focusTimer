@@ -10,10 +10,11 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>FocusTimer - Pomodoro</title>
   </head>
+
   <body>
     <div id="app">
       <button id="toglle-mode">
-        <span class="sr-only">Ativar Ligh mode</span>
+        <span class="sr-only">Ativar Light mode</span>
         <i class="ph ph-sun"></i>
         <i class="ph ph-moon"></i>
       </button>
@@ -40,13 +41,29 @@
         <button data-action="reset" class="ph ph-stop-circle secondary">
           <span class="sr-only">Reiniciar contador </span>
         </button>
-        <button data-action="toggleMusic" class="ph ph-speaker-none secondary">
-          <span class="sr-only">Iniciar musica</span>
+
+        <button data-action="buttonMore" class="ph ph-plus-circle">
+          <span class="sr-only">Adicionar cinco minutos</span>
         </button>
-        <button data-action="toggleMusic" class="ph ph-speaker-high">
-          <span class="sr-only">Parar musica</span>
+
+        <button data-action="buttonAnyLess" class="ph ph-minus-circle">
+          <span class="sr-only">Diminuir cinco minutos</span>
         </button>
       </section>
+    </div>
+    <div id="soudStyle" class="soudStyles">
+      <button
+        id="butonFlorest"
+        data-action="florest"
+        class="ph ph-tree"
+      ></button>
+      <button
+        id="butonRain"
+        data-action="rain"
+        class="ph ph-cloud-rain"
+      ></button>
+      <button id="butonFire" data-action="fire" class="ph ph-fire"></button>
+      <button id="butonBirds" data-action="birds" class="ph ph-bird"></button>
     </div>
   </body>
 </html>

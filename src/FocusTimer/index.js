@@ -7,4 +7,5 @@ export function start(minutes, seconds) {
   timer.updatedDisplay();
   events.registerControls();
   events.setMinutes();
+  events.controlsSoudStyles();
 }

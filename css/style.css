@@ -4,17 +4,21 @@
   box-sizing: border-box;
 }
 :root {
-  --hue: 194;
+  --hue: 132;
   --bg-color: hsla(var(--hue), 5%, 7%);
   --text-color: hsla(var(--hue), 40%, 98%, 1);
   --primary-color: hsla(var(--hue), 100%, 64%);
   --controls-bg-color: hsla(var(--hue), 0%, 14%);
   --button-secondary: hsla(var(--hue), 40%, 98%, 1);
-
   font-size: clamp(40%, 1% + 2vw, 65.5%);
+}
+.corButonFoco {
+  background-color: red;
+  color: blue;
 }
 html.light {
   --text-color: hsla(var(--hue), 5%, 7%);
+  --colorButonSounds: hsla(var(--hue), 5%, 7%);
   --bg-color: hsla(var(--hue), 40%, 98%, 1);
   --controls-bg-color: hsla(var(--hue), 0%, 14%);
 }
@@ -27,7 +31,9 @@ html:not(.light) .ph-moon {
   right: 3.2rem;
   top: 3.2rem;
   font-size: 3.2rem;
+  border: none;
   color: var(--text-color);
+  background-color: transparent;
   cursor: pointer;
 }
 body {
@@ -36,10 +42,30 @@ body {
   display: grid;
   height: 100vh;
   place-content: center;
+  gap: 15px;
 }
-.app {
+#app {
   display: grid;
   justify-items: center;
+  gap: 35px;
+}
+.soudStyles {
+  display: grid;
+  grid-template-columns: 100px 100px;
+  justify-content: space-around;
+  margin-top: 35px;
+  gap: 15px;
+  height: 350px;
+  padding: 15px;
+}
+.soudStyles button {
+  height: 100px;
+  width: 100px;
+  background-color: rgb(167, 174, 180);
+  border-radius: 15px;
+  border: 0;
+  cursor: pointer;
+  font-size: 6.4rem;
 }
 .flex {
   display: flex;
@@ -58,7 +84,7 @@ body {
   background-color: var(--controls-bg-color);
   border-radius: 999rem;
 }
-button {
+section button {
   background-color: transparent;
   border: 0;
   color: var(--primary-color);
@@ -87,4 +113,10 @@ html:not(.music-on) .ph-speaker-high {
   padding: 0;
   border: 0;
   appearance: none;
+}
+@media (min-width: 750px) {
+  body {
+    display: grid;
+    grid-template-columns: 600px 600px;
+  }
 }

@@ -2,6 +2,7 @@ import state from "./state.js";
 import * as el from "./elements.js";
 import { reset } from "./actions.js";
 import { kichenTimer } from "./sounds.js";
+import { updatedDisplay } from "./timer.js";
 
 export function countDown() {
   clearTimeout(state.countDouwnId);
@@ -20,17 +21,10 @@ export function countDown() {
     kichenTimer.play();
     return;
   }
+
   updatedDisplay(minutes, seconds);
 
   state.countDouwnId = setTimeout(() => {
     countDown();
   }, 1000);
-}
-
-export function updatedDisplay(minutes, seconds) {
-  minutes = minutes ?? state.minutes;
-  seconds = seconds ?? state.seconds;
-
-  el.minutes.textContent = String(minutes).padStart(2, "0");
-  el.seconds.textContent = String(seconds).padStart(2, "0");
 }
