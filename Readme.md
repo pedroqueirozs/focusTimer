@@ -1,7 +1,7 @@
-<h1 align="center">Focus-Timer 2.0 </h1>
+<h1 align="center">Focus Timer 2.0 </h1>
 
 <p align="center">
-Projeto  Focus Timer desenvolvido no modulo V do curso Explorer <br/>
+Projeto  Focus Timer desenvolvido no modulo 5 do curso Explorer <br/>
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -30,8 +30,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - Figma
 
 ## 💻 Projeto
-
-Projeto desenvolvido para mobile e desktop . -[Visite o projeto online]()
+O projeto foi desenvolvido com o propósito de auxialiar no gerenciamento do tempo de realização de uma determinada tarefa ou estudo trazendo o conceito da técnica POMODORO.O Método Pomodoro é um método de gerenciamento de tempo baseado em períodos de 25 minutos e intervalo de cinco minutos vizando desenvolver uma tarefa com o maior foco e sem interrupções.   
+Projeto desenvolvido para mobile e desktop . -[Visite o projeto online](https://pedroqueirozs.github.io/focusTimer/)
 
 ## 🔖 Layout
 
